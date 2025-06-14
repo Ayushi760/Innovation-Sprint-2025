@@ -10,8 +10,6 @@
 - Code Quality
 - Ease of Use
 - Speed / Latency
-- API Usage Pattern Generation
-- Frontend Component Generation (React)
 
 #### Legend for Ratings:
 - ✅ Excellent
