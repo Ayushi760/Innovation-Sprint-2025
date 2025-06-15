@@ -1,11 +1,21 @@
 # 🧠 AI Knowledge Assistant - RAG Chatbot
 
-A production-ready Retrieval-Augmented Generation (RAG) chatbot powered by Azure OpenAI that enables intelligent document querying and conversational AI interactions.
+A Retrieval-Augmented Generation (RAG) chatbot powered by Azure OpenAI that enables intelligent document querying and conversational AI interactions.
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.45.1-red.svg)](https://streamlit.io)
 [![Azure OpenAI](https://img.shields.io/badge/Azure-OpenAI-green.svg)](https://azure.microsoft.com/en-us/products/ai-services/openai-service)
 [![ChromaDB](https://img.shields.io/badge/ChromaDB-1.0.12-orange.svg)](https://www.trychroma.com/)
+
+
+
+## 🎬 Demo Video
+
+> **See the AI Knowledge Assistant in action!** Watch how easy it is to upload documents, ask questions, and get intelligent responses with source citations.
+
+
+![Demo Video](demo-video.mp4)
+
 
 ## 🚀 Features
 
