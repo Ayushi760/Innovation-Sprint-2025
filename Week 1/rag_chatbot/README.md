@@ -14,7 +14,7 @@ A Retrieval-Augmented Generation (RAG) chatbot powered by Azure OpenAI that enab
 > **See the AI Knowledge Assistant in action!** Watch how easy it is to upload documents, ask questions, and get intelligent responses with source citations.
 
 
-![Demo Video](demo-video.mp4)
+![Demo Video](demo_video.mp4)
 
 
 ## 🚀 Features
