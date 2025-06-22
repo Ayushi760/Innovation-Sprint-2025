@@ -137,13 +137,13 @@ Here is the multi-layered mitigation strategy against prompt injection attacks:
 - Action: Ensure that sensitive information (even if accidentally introduced) does not persist across conversations if not explicitly needed.
 - Benefit: Limits the lifespan of potentially compromised information within the AI's active memory.
 
-### Output Post-processing and Validation
+### Layer 4: Output Post-processing and Validation
 
 1. ***Output Filtering***
 - Action: Add a step after the AI responds that checks for restricted words or sensitive information (like "password," "confidential," IP addresses, or system paths). If anything is found, either hide it or stop the response from being shown.
 - Benefit: Serves as a last layer of protection to catch any sensitive or harmful information the AI might accidentally or intentionally include.
 
-### Monitoring, Logging, and Human Oversight
+### Layer 5: Monitoring, Logging, and Human Oversight
 
 1. ***Comprehensive Logging***
 - Action: og all user inputs, AI prompts (including injected context), AI responses, and any alerts triggered by your mitigation layers. Include timestamps, user IDs (session-based), and relevant metadata.
