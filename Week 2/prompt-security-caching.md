@@ -159,13 +159,32 @@ Here is the multi-layered mitigation strategy against prompt injection attacks:
 
 ## Authentication Architecture
 ```mermaid
-graph LR
-    A[Employee Interface] --> B[Authentication Service]
-    B --> C[HR Assistant<br/>No Credentials]
-    B --> D[Employee Data<br/>Database]
+graph TD
+    A[👤 Employee Interface] --> B{🔐 Authentication Service}
+    B --> C[✅ Valid Session?]
+    C -->|No| D[❌ Access Denied]
+    C -->|Yes| E[🧹 Input Sanitizer]
     
-    style A fill:#e1f5fe
-    style B fill:#fff3e0
-    style C fill:#e8f5e8
-    style D fill:#fce4ec
+    E --> F{🛡️ Safe Query?}
+    F -->|No| G[⚠️ Block & Log Attack]
+    F -->|Yes| H[📋 Context Builder]
+    
+    H --> I[(🗃️ Employee Database)]
+    H --> J[🤖 HR Assistant<br/>NO CREDENTIALS]
+    
+    I --> K[📍 Department & Location]
+    K --> J
+    L[📜 Policy Database] --> J
+    
+    J --> M[📝 Policy Response]
+    M --> N[🔍 Output Filter]
+    N --> O[✅ Clean Response]
+    O --> A
+    
+    style A fill:#e1f5fe,stroke:#01579b
+    style B fill:#fff3e0,stroke:#e65100
+    style J fill:#e8f5e8,stroke:#1b5e20
+    style I fill:#fce4ec,stroke:#880e4f
+    style G fill:#ffebee,stroke:#c62828
+    style O fill:#f3e5f5,stroke:#4a148c
 ```
