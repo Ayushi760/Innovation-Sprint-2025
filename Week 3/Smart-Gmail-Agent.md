@@ -1,6 +1,8 @@
 # Recording
 
-[video](./Smart-Gmail-Agent.mov)
+
+[video](https://github.com/user-attachments/assets/adcc4799-8c26-4065-8ced-775d432c6782)
+
 
 # Smart Gmail Agent Code:
 ```
