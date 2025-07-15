@@ -2,6 +2,10 @@
 
 A sophisticated support system built with LangGraph and Azure OpenAI that intelligently routes user queries to specialized agents for IT and Finance support.
 
+▶️ **Watch the system in action:**  
+
+https://github.com/user-attachments/assets/c629bc1e-0c15-4cac-b5a5-ad1ad1fe5c19
+
 ## 🏗️ System Architecture
 
 The system consists of three specialized agents working together:
@@ -91,7 +95,7 @@ multi-agent-support/
 1. **Clone the repository**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Ayushi760/Innovation-Sprint-2025
    cd multi-agent-support
    ```
 
