@@ -1,0 +1,59 @@
+DEMO QUERIES FOR MULTI-AGENT SUPPORT SYSTEM
+
+=== IT SUPPORT QUERIES ===
+
+1. How do I set up VPN on my laptop?
+
+2. My computer is running very slow and keeps freezing. What should I do?
+
+3. Can I install Adobe Creative Suite on my work computer?
+
+4. I can't connect to the office WiFi. Can you help me troubleshoot?
+
+5. What antivirus software is approved for company laptops?
+
+6. How do I request a new laptop for my team member?
+
+=== FINANCE SUPPORT QUERIES ===
+
+7. How do I file a reimbursement for my business expenses?
+
+8. When will I receive my salary this month and how is overtime calculated?
+
+9. I'm traveling to New York for business. What expenses can I claim and what's the daily allowance?
+
+10. Where can I find the latest budget reports for my department?
+
+11. What's the process for getting approval for a large purchase?
+
+12. How do I submit my monthly expense report?
+
+=== MIXED/COMPLEX QUERIES ===
+
+13. I need to expense my new laptop purchase and also set up VPN access for remote work
+
+14. I accidentally deleted important files and need to know if data recovery is covered under our IT budget
+
+15. What are the company's work from home policies and IT equipment allowances?
+
+16. Can you help me understand the software licensing costs for my project?
+
+=== GENERAL QUERIES ===
+
+17. What are the company holiday schedules for this year?
+
+18. How do I contact HR for policy questions?
+
+19. What's the process for reporting a security incident?
+
+20. Can you explain the employee benefits package?
+
+=== DEMO FLOW SUGGESTION ===
+
+Start with: Query 1 (VPN setup)
+Then try: Query 2 (slow computer)
+Finance: Query 7 (reimbursement)
+Finance: Query 8 (payroll)
+Complex: Query 13 (mixed IT/Finance)
+Complex: Query 14 (data recovery + budget)
+End with: Query 15 (work from home policies)
