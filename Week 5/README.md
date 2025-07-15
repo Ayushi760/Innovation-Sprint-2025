@@ -7,14 +7,16 @@ A sophisticated support system built with LangGraph and Azure OpenAI that intell
 The system consists of three specialized agents working together:
 
 ### 1. **Supervisor Agent** 🎯
+
 - **Role**: Query classification and routing
 - **Model**: Azure OpenAI GPT-4
 - **Function**: Analyzes user queries and routes them to appropriate specialist agents
-- **Routing Logic**: 
+- **Routing Logic**:
   - IT queries → IT Agent
   - Finance queries → Finance Agent
 
 ### 2. **IT Agent** 💻
+
 - **Role**: Technical support specialist
 - **Model**: Azure OpenAI GPT-4
 - **Tools**:
@@ -24,6 +26,7 @@ The system consists of three specialized agents working together:
 - **Expertise**: VPN setup, software approval, hardware requests, troubleshooting
 
 ### 3. **Finance Agent** 💰
+
 - **Role**: Financial support specialist  
 - **Model**: Azure OpenAI GPT-4
 - **Tools**:
@@ -47,30 +50,30 @@ The system consists of three specialized agents working together:
 
 ```
 multi-agent-support/
-├── main.py                     # Main application entry point
-├── streamlit_app.py            # Modern Streamlit chat interface
-├── run_streamlit.py            # Streamlit launcher script
-├── config.py                   # Azure OpenAI configuration
-├── requirements.txt            # Python dependencies
-├── .env.example               # Environment variables template
+├── main.py                     
+├── streamlit_app.py            
+├── run_streamlit.py           
+├── config.py                  
+├── requirements.txt          
+├── .env.example              
 ├── agents/
 │   ├── __init__.py
-│   ├── supervisor.py          # Supervisor agent implementation
-│   ├── it_agent.py           # IT specialist agent
-│   └── finance_agent.py      # Finance specialist agent
+│   ├── supervisor.py         
+│   ├── it_agent.py          
+│   └── finance_agent.py     
 ├── tools/
 │   ├── __init__.py
-│   ├── read_file.py          # Internal document reader
-│   └── web_search.py         # DuckDuckGo web search
+│   ├── read_file.py          
+│   └── web_search.py       
 ├── utils/
 │   ├── __init__.py
-│   └── handoffs.py           # Agent handoff utilities
+│   └── handoffs.py           
 └── data/
-    ├── it_docs/              # IT documentation
+    ├── it_docs/            
     │   ├── vpn_setup_guide.md
     │   ├── approved_software_list.md
     │   └── hardware_request_process.md
-    └── finance_docs/         # Finance documentation
+    └── finance_docs/        
         ├── reimbursement_policy.md
         └── payroll_schedule.md
 ```
@@ -78,6 +81,7 @@ multi-agent-support/
 ## 🛠️ Installation
 
 ### Prerequisites
+
 - Python 3.8+
 - Azure OpenAI account and API key
 - Internet connection for web search
@@ -85,22 +89,26 @@ multi-agent-support/
 ### Setup Steps
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd multi-agent-support
    ```
 
 2. **Install dependencies**
+
    ```bash
    pip install -r requirements.txt
    ```
 
 3. **Configure Azure OpenAI**
+
    ```bash
    cp .env.example .env
    ```
-   
+
    Edit `.env` with your Azure OpenAI credentials:
+
    ```env
    AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com/
    AZURE_OPENAI_API_KEY=your-api-key-here
@@ -109,16 +117,17 @@ multi-agent-support/
    ```
 
 4. **Run the system**
-   
+
    **Option A: Streamlit Web UI**
+
    ```bash
    streamlit run app.py
    ```
 
-
 ## 🎮 Usage
 
 ### Streamlit Web UI
+
 Run the modern web interface for the best user experience:
 
 ```bash
@@ -126,6 +135,7 @@ streamlit run app.py
 ```
 
 The web interface provides:
+
 - 🎨 **Modern Chat Interface**: Native Streamlit chat components
 - 💡 **Quick Start Buttons**: Sample queries in main chat window
 - 🤖 **Agent Information**: Tabbed sidebar with agent details
@@ -133,20 +143,22 @@ The web interface provides:
 - ⚙️ **Smart Controls**: Clear chat, system info, and help sections
 - 📱 **Responsive Design**: Works on all devices
 
-Access the application at: http://localhost:8501
+Access the application at: <http://localhost:8501>
 
 ## 🔧 Configuration
 
 ### Azure OpenAI Models
 
-- **GPT-4**: Supervisor and specialist agents 
+- **GPT-4**: Supervisor and specialist agents
 
 ### File Processing
+
 - **Supported formats**: PDF, Markdown (.md), Text (.txt)
 - **File size limit**: 10MB per file
 - **Search capability**: Keyword-based file discovery
 
 ### Web Search
+
 - **Provider**: DuckDuckGo (no API key required)
 - **Results limit**: 5 results per query
 - **Context enhancement**: Query optimization based on agent domain
@@ -154,6 +166,7 @@ Access the application at: http://localhost:8501
 ## 📚 Sample Queries
 
 ### IT Support Examples
+
 - "How do I set up VPN?"
 - "What software is approved for use?"
 - "How to request a new laptop?"
@@ -161,6 +174,7 @@ Access the application at: http://localhost:8501
 - "How do I install Visual Studio Code?"
 
 ### Finance Support Examples
+
 - "How to file a reimbursement?"
 - "Where to find last month's budget report?"
 - "When is payroll processed?"
